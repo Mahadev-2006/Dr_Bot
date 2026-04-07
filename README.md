@@ -1,8 +1,5 @@
 # 👁️ DRBot — Multimodal Diabetic Retinopathy Assistant
 
-<p align="center">
-  <img src="assets/drbot_banner.png" alt="DRBot Banner" width="800"/>
-</p>
 
 <p align="center">
   <a href="#architecture">Architecture</a> •
@@ -212,7 +209,7 @@ If you use DRBot in your research, please cite:
 ```bibtex
 @misc{drbot2025,
   author    = {Mahadev},
-  title     = {DRBot: A Multimodal Framework for Diabetic Retinopathy Diagnosis and Patient Communication},
+  title     = {DRBot: A Multimodal Framework for Diabetic Retinopathy Stages Detection and Analysis},
   year      = {2025},
   publisher = {GitHub},
   url       = {https://github.com/Mahadev-2006/Dr_Bot}
