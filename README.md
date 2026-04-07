@@ -88,10 +88,6 @@ System performance was validated using an **LLM-as-a-Judge** protocol (*N* = 30)
 | Relevance | 4.43 |
 | Safety | 4.80 |
 
-<p align="center">
-  <img src="assets/confusion_matrix.png" alt="Confusion Matrix" width="500"/>
-</p>
-
 ---
 
 ## Setup
@@ -194,10 +190,7 @@ Dr_Bot/
 ├── models/                 # Saved model weights (not tracked in Git)
 │   └── swin_aptos_best.pth
 │
-├── notebooks/              # Exploratory notebooks
-│
-└── assets/                 # Figures & plots
-    └── confusion_matrix.png
+└── notebooks/              # Exploratory notebooks
 ```
 
 ---
