@@ -1,38 +1,4 @@
-"""
-app.py
-------
-DRBot – Multimodal Diabetic Retinopathy Assistant
 
-Architecture overview
----------------------
-  ┌──────────────────────────────────────────────┐
-  │  Gradio 5 UI                                 │
-  │  ┌────────────┐    ┌──────────────────────┐  │
-  │  │ Fundus     │    │ Chat interface       │  │
-  │  │ image drop │    │ (Chatbot component)  │  │
-  │  └─────┬──────┘    └──────────┬───────────┘  │
-  └────────┼───────────────────────┼─────────────┘
-           │                       │
-  ┌────────▼───────────────────────▼─────────────┐
-  │  handle_submission()                         │
-  │                                              │
-  │  image? ──► Swin Transformer ──► DR stage   │
-  │                                              │
-  │  text?  ──► DistilBART-MNLI intent router   │
-  │               │                              │
-  │    ┌──────────┴──────────┐                  │
-  │    │ medical question    │ general query     │
-  │    │                     │                  │
-  │    │  Hybrid RAG         │  LLaMA 3.2       │
-  │    │  (FAISS+BM25+RRF)   │  (general mode)  │
-  │    │  CrossEncoder rerank│                  │
-  │    │  LLaMA 3.2 (RAG)    │                  │
-  │    └─────────────────────┘                  │
-  └──────────────────────────────────────────────┘
-
-Usage
------
-  python app.py
 
 Models required
 ---------------
